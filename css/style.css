@@ -15,6 +15,9 @@ img{
     height: auto;
     display: block;
 }
+.desativado{
+    display: none;
+}
 #main-alura-cripto{
     display: flex;
     width: 100%;
@@ -50,7 +53,9 @@ img{
     color: #0A3871;
     font-size: 18px;
     font-weight: normal;
-    overflow: hidden;
+    overflow-y: hidden;
+    resize: none;
+    white-space: pre-wrap;
 }
 .card-texto-codificar #codificador::placeholder{
     color: #0A3871;
@@ -106,7 +111,7 @@ img{
     padding-top: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 #card-descrip h2{
@@ -116,7 +121,8 @@ img{
     text-align: center;
     color: #495057;
     margin-bottom: 16px;
-
+    width: 80%;
+    /* margin: auto; */
 }
 #card-descrip p{
     font-style: normal;
@@ -124,4 +130,33 @@ img{
     font-size: 16px;
     text-align: center;
     color: #495057;
+    width: 80%;
+    /* margin: auto; */
+}
+
+#card-descrip #mensagem-cript{
+    width: 100%;
+    height: 300px;
+    resize: none;
+    color: #495057;
+    font-size: 16px;
+    font-weight: normal;
+    overflow-y: hidden;
+    resize: none;
+    white-space: pre-wrap;
+}
+#card-descrip #copiar{
+    margin-top: 140px;
+    width: 100%;
+    max-width: 85%;
+    padding: 14px;
+    background-color: #FFF;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    text-align: center;
+    border-radius: 20px;
+}
+#card-descrip #copiar:active{
+    color: #017e01;
+    border-color: #017e01;
 }

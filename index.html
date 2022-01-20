@@ -26,18 +26,26 @@
             <section class="card-funcoes">
                 <h2><i class="fas fa-exclamation-circle"></i> Apenas letras minúsculas e sem acento.</h2>
                 <div class="botoes-criptografia">
-                    <input id="cript" type="button" value="Criptografar" \>
-                    <input id="descript" type="button" value="Descriptografar" \>
+                    <input onclick="chamarCripto()" id="cript" type="button" value="Criptografar" \>
+                    <input onclick="chamarDescripto()" id="descript" type="button" value="Descriptografar" \>
                 </div>
             </section>
         </article>
 
         <article id="card-descrip">
-            <img src="./img/products.png" alt="">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <p>Digite um texto que você deseja</p>
-            <p>criptografar ou descriptografar.</p>
+            <div id="1">
+                <img src="./img/products.png" alt="">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+            <div id="2" class="desativado">
+                 <textarea name="mensagem-cript" id="mensagem-cript"></textarea>
+                <input onclick="copiarArea()" id="copiar" type="button" value="Copiar" \>
+            </div>
         </article>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
