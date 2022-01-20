@@ -6,8 +6,10 @@ const card2 = document.getElementById("2");
 
 function chamarCripto(){
     let mensagem = criptografarMensagem(textAreaCodificador.value);
-    card1.classList.toggle("desativado");
-    card2.classList.toggle("desativado");
+    if(card2.className = "desativado"){
+        card2.classList.remove("desativado");
+        card1.classList.add("desativado");
+    }
 
     let mensagemCript = document.getElementById("mensagem-cript");
     mensagemCript.value = mensagem;
@@ -30,8 +32,10 @@ function criptografarMensagem(mensagem){
 
 function chamarDescripto(){
     let mensagem = descriptografarMensagem(textAreaCodificador.value);
-    card1.classList.toggle("desativado");
-    card2.classList.toggle("desativado");
+    if(card2.className = "desativado"){
+        card2.classList.remove("desativado");
+        card1.classList.add("desativado");
+    }
 
     let mensagemCript = document.getElementById("mensagem-cript");
     mensagemCript.value = mensagem;
